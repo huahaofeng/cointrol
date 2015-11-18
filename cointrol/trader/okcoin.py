@@ -88,7 +88,6 @@ class Ticker(Model):
         'ask': Decimal,
         'volume': Decimal,
         'timestamp': parse_timestamp,
-        'open': Decimal,
     }
 
 

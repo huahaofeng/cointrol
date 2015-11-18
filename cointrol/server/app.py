@@ -12,7 +12,7 @@ import django.core.handlers.wsgi
 import django.contrib.staticfiles.handlers
 from django.conf import settings
 
-from . import realtime
+from cointrol.server import realtime
 
 
 define('port', type=int, default=8000)

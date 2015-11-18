@@ -222,6 +222,7 @@ class Ticker(models.Model):
         volume: "39060.90623024",
         low: "633.64",
         ask: "678.57"
+        open: "336.00",
     }
     """
     timestamp = models.DateTimeField()
@@ -232,6 +233,7 @@ class Ticker(models.Model):
     low = PriceField()
     bid = PriceField()
     ask = PriceField()
+    open = PriceField()
 
     class Meta:
         ordering = ['-timestamp']

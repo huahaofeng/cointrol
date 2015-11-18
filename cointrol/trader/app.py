@@ -5,12 +5,12 @@ from tornado.gen import coroutine
 from tornado import autoreload
 from django.conf import settings
 
-from .workers import (TickerWatcher, TransactionsWatcher,
+from cointrol.trader.workers import (TickerWatcher, TransactionsWatcher,
                       OrdersWatcher, Monitoring)
 
 
 log = logging.getLogger(__name__)
-
+log.setLevel(logging.INFO)
 
 @coroutine
 def main_loop():
